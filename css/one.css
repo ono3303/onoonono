@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  height: auto;
+  font-family: "Noto Serif JP", serif; }
+
+.body {
+  margin: 0 auto;
+  max-width: 1600px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none; }
+
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: black;
+  z-index: 99; }
+
+.loading-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: load 1s ease-in-out forwards infinite; }
+
+@keyframes load {
+  from,to {
+    opacity: 0; }
+  100% {
+    opacity: .5; } }
+.one {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  width: 1600px;
+  margin: 0 auto; }
+  .one h1 {
+    margin-top: 150px; }
+
+.one p {
+  margin-top: 150px; }
+  .one p a {
+    color: white; }
+
+.one-menu ul {
+  max-width: 1000px;
+  display: flex;
+  margin: 30px auto 0 auto;
+  justify-content: space-between; }
+  .one-menu ul li a {
+    font-size: 17px;
+    position: relative;
+    padding: 0 5px; }
+    .one-menu ul li a::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: black;
+      transition: all 0.3s ease 0s; }
+
+.one-menu ul li a:hover::after {
+  width: 100%; }
+
+.blog {
+  border: 1px solid black; }
+  .blog a:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold; }
+
+/*# sourceMappingURL=one.css.map */
